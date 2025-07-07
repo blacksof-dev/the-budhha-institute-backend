@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>Edit the form</h1> 
+
+
+   <form method="post" action="/api/admin/reset-password/<%=user.id%>" enctype="multipart/form-data">
+    <div>
+        <input type="password" name="currentPassword" placeholder="Enter your new Password">
+    </div> 
+
+    <div>
+        <input type="password" name="confirmpassword" placeholder="Enter your Confirm Password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</body>
+</html>

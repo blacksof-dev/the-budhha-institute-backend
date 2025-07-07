@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>Edit the form</h1> 
+
+   <form method="post" action="/api/caseStudy/create" enctype="multipart/form-data">
+   
+    <div class="">
+        <input type="file" name="cover"  placeholder="Enter your cover">
+    </div>
+    
+    <div class="">
+        <input type="file" name="logo"  placeholder="Enter your logo">
+    </div>
+
+    <div class="">
+        <input type="text" name="title"  placeholder="Enter your Title">
+    </div>
+
+    <div class="">
+        <input type="text" name="subtitle"  placeholder="Enter your subTitle">
+    </div>   
+
+    <div class="">
+        <input type="text" name="description"  placeholder="Enter your desc">
+    </div>  
+
+    <div class="">
+        <input type="file" name="casestudyPdf"  placeholder="Enter your pdf">
+    </div>
+
+    <div class="">
+        <input type="text" name="casestudyLink"  placeholder="Enter your pdflink">
+    </div>  
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
+</body>
+</html>
