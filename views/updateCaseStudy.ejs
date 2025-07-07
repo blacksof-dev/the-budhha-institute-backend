@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>Update the form</h1> 
+
+   <form method="POST" action="/api/caseStudy/edit/<%= data._id %>?_method=PATCH" enctype="multipart/form-data">
+   
+    <div class="">
+        <img src="<%= data.cover %>" alt="User Image" style="width:250px" />
+        <input type="file" name="cover"  placeholder="Enter your Image">
+    </div>
+    
+    <div class="">
+        <img src="<%= data.logo %>" alt="User Image" style="width:250px" />
+        <input type="file" name="logo"  placeholder="Enter your Image">
+    </div>
+
+    <div class="">
+        <input type="text" name="title" value="<%= data.title%>"  placeholder="Enter your Title">
+    </div>
+
+    <div class="">
+        <input type="text" name="subtitle"  value="<%= data.subtitle%>" placeholder="Enter your Title">
+    </div>   
+
+    <div class="">
+        <input type="text" name="description" value="<%= data.description%>"  placeholder="Enter your pdf">
+    </div>  
+
+    <div class="">
+         <a href="<%= data.casestudyPdf %>">PrevLink</a>
+        <input type="file" name="casestudyPdf"  placeholder="Enter your Image">
+    </div>
+
+    <div class="">
+        <input type="text" name="casestudyLink" value="<%= data.casestudyLink%>"  placeholder="Enter your pdf">
+    </div>  
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
+</body>
+</html>

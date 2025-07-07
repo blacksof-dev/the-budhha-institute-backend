@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Edit the form</h1> 
+   <form method="POST" action="/api/updates/edit/<%= data._id %>?_method=PATCH" enctype="multipart/form-data">
+   
+    <div class="mb-3">
+        <img src="<%= data.cover %>" alt="User Image" style="width:250px" />
+        <input type="file" name="cover"  placeholder="Enter your Image">
+    </div>
+    <div class="">
+        <input type="text" name="tag"  value="<%= data.tag%>" placeholder="Enter your Tag">
+    </div> 
+    <div class="">
+        <input type="text" name="title"  value="<%= data.title%>" placeholder="Enter your Title">
+    </div> 
+    <div>
+        <input type="text" name="description" value="<%= data.description%>"  placeholder="Enter your Description">
+    </div>
+  
+     
+    <div class="">
+        <input type="text" name="targetLink" value="<%=data.targetLink %>"  placeholder="Enter your pdf">
+    </div>    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
