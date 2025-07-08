@@ -52,12 +52,12 @@ app.use(
 );
 
 
-// const allowedOrigins = [
-//   "http://localhost:3001",
-//   "https://thebuddhainstitute.org",
-//   "https://api.thebuddhainstitute.org",
-//   "https://www.thebuddhainstitute.org"
-// ];
+const allowedOrigins = [
+  "http://localhost:3001",
+  "https://thebuddhainstitute.org",
+  "https://api.thebuddhainstitute.org",
+  "https://www.thebuddhainstitute.org"
+];
 
 app.use(cors({
   origin: function (origin, callback) {
